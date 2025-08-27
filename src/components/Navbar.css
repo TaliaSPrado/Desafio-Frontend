@@ -1,0 +1,33 @@
+/* Navbar estilizada */
+.navbar-main {
+  display: flex;
+  gap: 18px;
+  margin: 24px 0 32px 0;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 2px 16px #e0c3fc33;
+  padding: 12px 0;
+}
+
+.navbar-link {
+  border: 2.5px solid #a020f0;
+  padding: 8px 28px;
+  border-radius: 8px;
+  text-decoration: none;
+  color: #a020f0;
+  font-weight: 700;
+  font-size: 1.1rem;
+  background: #f8fafc;
+  transition: all 0.18s;
+  box-shadow: 0 2px 8px #e0c3fc22;
+  position: relative;
+}
+
+.navbar-link.active, .navbar-link:hover {
+  background: linear-gradient(90deg, #a020f0 60%, #f72585 100%);
+  color: #fff;
+  border-color: #f72585;
+  box-shadow: 0 4px 16px #e0c3fc55;
+}

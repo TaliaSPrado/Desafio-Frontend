@@ -1,0 +1,89 @@
+/* Estilo global para fundo, fontes e grid de cards de gatos */
+body {
+  background: #111;
+  font-family: 'Poppins', 'Segoe UI', Arial, sans-serif;
+  color: #fff;
+  min-height: 100vh;
+}
+
+.cat-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 40px;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 48px 16px 64px 16px;
+}
+
+.cat-card-bs {
+  background: #fff;
+  border-radius: 22px;
+  box-shadow: 0 8px 32px #a020f055, 0 2px 12px #f7258555;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.18s, box-shadow 0.18s;
+  border: 3px solid #e0c3fc;
+  position: relative;
+  min-height: 420px;
+}
+.cat-card-bs:hover {
+  transform: translateY(-12px) scale(1.04);
+  box-shadow: 0 16px 48px #a020f099, 0 4px 24px #f7258599;
+  border-color: #f72585;
+}
+.cat-card-bs img {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  border-radius: 22px 22px 0 0;
+  box-shadow: 0 2px 12px #a020f033;
+}
+.cat-card-bs .cat-info {
+  padding: 18px 16px 12px 16px;
+  width: 100%;
+  text-align: center;
+}
+.cat-card-bs .cat-info h4 {
+  font-family: 'Montserrat', 'Baloo 2', cursive;
+  font-size: 1.45rem;
+  font-weight: 800;
+  color: #a020f0;
+  margin: 0 0 10px 0;
+  letter-spacing: 1.5px;
+  text-shadow: 0 2px 8px #e0c3fc44;
+}
+.cat-card-bs .cat-info p {
+  font-size: 1.13rem;
+  color: #5a189a;
+  margin: 0 0 14px 0;
+  font-family: 'Poppins', Arial, sans-serif;
+}
+.cat-card-bs .cat-icons {
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+.cat-card-bs .cat-female { color: #f72585; font-size: 1.3rem; }
+.cat-card-bs .cat-male { color: #4361ee; font-size: 1.3rem; }
+.cat-card-bs .adopt-btn {
+  background: #a020f0;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 7px 22px;
+  font-size: 1.1rem;
+  font-family: inherit;
+  font-weight: 700;
+  margin-top: 8px;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.2s;
+  box-shadow: 0 2px 8px #e0c3fc;
+}
+.cat-card-bs .adopt-btn:hover {
+  background: #f72585;
+  transform: scale(1.07);
+}

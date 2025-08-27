@@ -1,0 +1,44 @@
+.main-cat-page {
+  min-height: 100vh;
+  padding-bottom: 40px;
+}
+
+.main-cat-page h2 {
+  font-family: 'Montserrat', 'Baloo 2', cursive;
+  font-weight: 900;
+  color: #fff;
+  margin-top: 40px;
+  margin-bottom: 32px;
+  letter-spacing: 2px;
+  text-shadow: 0 4px 16px #a020f0cc, 0 2px 8px #f72585cc;
+  text-align: center;
+  font-size: 2.3rem;
+}
+
+.main-cat-page .cat-gallery {
+  margin-top: 18px;
+}
+
+.main-cat-page .cat-card {
+  margin: 0 auto 18px auto;
+}
+
+.main-cat-page .adopt-btn {
+  background: #a020f0;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 7px 22px;
+  font-size: 1.1rem;
+  font-family: inherit;
+  font-weight: 700;
+  margin-top: 8px;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.2s;
+  box-shadow: 0 2px 8px #e0c3fc;
+}
+
+.main-cat-page .adopt-btn:hover {
+  background: #f72585;
+  transform: scale(1.07);
+}
